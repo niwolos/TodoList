@@ -1,3 +1,3 @@
 # TodoList
 
-An amazing minimalistic TodoList web application
+An amazing minimalistic TodoList web application - features yet to come.
