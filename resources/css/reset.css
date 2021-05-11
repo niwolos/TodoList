@@ -52,12 +52,15 @@ body {
 .add {
   outline: none;
   border: none;
-  font-size: 46px;
+  font-size: 48px;
   font-weight: 400;
   background: transparent;
   cursor: pointer;
+  transition: transform 0.7s ease-in-out;
 }
-
+.active{
+  transform: rotate(90deg);
+}
 /* card template */
 .cards {
   display: flex;
@@ -99,9 +102,6 @@ body {
   justify-content: flex-start;
 }
 
-/* done checkbox for line-through */
-/* .content {
-} */
 .content {
   word-break: break-word;
   width: 360px;
@@ -130,7 +130,7 @@ body {
   width: 410px;
   margin: 0 auto;
   position: absolute;
-  left: 10px;
+  left: 8px;
   right: 10px;
   top: 110px;
 }

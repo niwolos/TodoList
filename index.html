@@ -13,6 +13,10 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href=" https://cdn.jsdelivr.net/npm/pretty-checkbox@3.0/dist/pretty-checkbox.min.css">
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+  />
   </head>
   <body>
 
@@ -21,39 +25,16 @@
       <h1 class="title"><a href="index.html"><span class="third">t</span><span class="second">o</span><span class="first"> d</span><span class="four">o</span></a></h1>
        <!-- input -->
      <div class="input">
-      <div class="input-title input-show">
+      <div class="input-title input-show animate__animated animate__fadeInDown">
           <input type="text" placeholder="write a task ..." autofocus required>
       </div>
     </div>
 
-      <button id="add" class="add">+</button>
+      <button id="add" class="add active">+</button>
     </div>
 
     
     <div class="cards">
-      <!-- card template -->
-      <div class="card">
-        <div class="card-top">
-          <p contenteditable="true" class="content">
-            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Natus, quis.
-          </p>
-        </div>
-        <div class="card-bottom">
-        <div class="pretty p-default p-round p-fill">
-          <input type="checkbox" />
-          <div class="state p-danger">
-              <label>delete</label>
-          </div>
-      </div>
-        <div class="pretty p-default p-round p-fill">
-          <input type="checkbox" />
-          <div class="state p-success">
-              <label>done</label>
-          </div>
-      </div>
-      </div>
-    </div>
-      <!-- --------------- -->
         <!-- card template -->
       <div class="card">
         <div class="card-top">
@@ -62,13 +43,13 @@
           </p>
         </div>
         <div class="card-bottom">
-        <div class="pretty p-default p-curve p-thick">
+        <div class="pretty p-default p-curve p-thick ">
           <input type="checkbox" />
           <div class="state p-danger-o">
               <label>delete</label>
           </div>
       </div>
-        <div class="pretty p-default p-curve p-thick">
+        <div class="pretty p-default p-curve p-thick done">
           <input type="checkbox" />
           <div class="state p-success-o">
               <label>done</label>
@@ -76,6 +57,29 @@
       </div>
       </div>
     </div>
+     <!-- card template -->
+     <div class="card">
+      <div class="card-top">
+        <p contenteditable="true" class="content">
+          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Natus, quis.
+        </p>
+      </div>
+      <div class="card-bottom">
+      <div class="pretty p-default p-round p-fill">
+        <input type="checkbox" />
+        <div class="state p-danger">
+            <label>delete</label>
+        </div>
+    </div>
+      <div class="pretty p-default p-round p-fill">
+        <input type="checkbox" />
+        <div class="state p-success">
+            <label>done</label>
+        </div>
+    </div>
+    </div>
+  </div>
+    <!-- --------------- -->
       <!-- --------------- -->
       <!-- card template -->
     <!--   <div class="card">
