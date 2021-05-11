@@ -3,6 +3,8 @@
 let input = document.querySelector('.input-title')
 const addBtn = document.querySelector('.add')
 const cardsContainer = document.querySelector('.cards')
+let doneCheckbox = document.querySelector('.done')
+let content = document.querySelector('.content')
 
 
 //get input value
@@ -17,7 +19,6 @@ const fillInput = () => {
 			let card = ''
 			if (valueInput !== '') {
 				card += `
-					<!-- card template -->
 					<div class="card">
 						<div class="card-top">
 						<p contenteditable="true" class="content">
@@ -25,15 +26,13 @@ const fillInput = () => {
 						</p>
 						</div>
 						<div class="card-bottom">
-						<!-- delete -->
 						<div class="pretty p-default p-round p-thick">
 						<input type="checkbox" />
 						<div class="state p-danger-o">
 							<label>delete</label>
 						</div>
 					</div>
-						<!-- done -->
-						<div class="pretty p-default p-round p-thick">
+						<div class="pretty p-default p-round p-thick done">
 						<input type="checkbox" />
 						<div class="state p-success-o">
 							<label>done</label>
@@ -41,7 +40,6 @@ const fillInput = () => {
 					</div>
 					</div>
 					</div>
-					<!-- --------------- -->
 			`
 			}
 			else {
@@ -55,6 +53,7 @@ const fillInput = () => {
 
 //input event
 addBtn.addEventListener('click', () => {
+	addBtn.classList.toggle('active')
 	input.classList.toggle('input-title')
 	fillInput()
 
