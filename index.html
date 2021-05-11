@@ -4,11 +4,135 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+    />
     <link rel="stylesheet" href="resources/css/reset.css">
     <link rel="stylesheet" href="resources/css/style.css">
     <title>Document</title>
 </head>
 <body>
+
+    <div class="header">
+        <h1 class="title">to do</h1>
+        <button id="add" class="add">+</button>
+      </div>
+  
+      <!-- tags -->
+      <div class="tags">
+        <span><i id="work" class="fas fa-circle work"></i> work</span>
+        <span><i id="study" class="fas fa-circle study"></i> study</span>
+        <span><i id="family" class="fas fa-circle family"></i> family</span>
+        <span
+          ><i id="entertainment" class="fas fa-circle entertainment"></i>
+          entertainment</span
+        >
+      </div>
+  
+      <div class="cards">
+        <!-- card template -->
+        <div class="card">
+          <div class="card-top">
+            <p class="content">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Repellendus, accusantium!
+            </p>
+            <button id="options" class="options">
+              <i class="fas fa-ellipsis-h"></i>
+            </button>
+          </div>
+          <div class="card-bottom">
+            <div class="tag">
+              <span><i id="work" class="fas fa-circle work"></i></span>
+              <span><i id="family" class="fas fa-circle family"></i></span>
+            </div>
+            <div class="done" id="done">
+              <label for="complete">done</label>
+              <input type="checkbox" id="complete" />
+            </div>
+          </div>
+        </div>
+        <!-- second card test / simple content-->
+        <div class="card">
+          <div class="card-top">
+            <p class="content-one">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab, id.
+            </p>
+            <button id="options" class="options">
+              <i class="fas fa-ellipsis-h"></i>
+            </button>
+          </div>
+          <div class="card-bottom">
+            <div class="tag">
+              <span><i id="study" class="fas fa-circle study"></i></span>
+              <span><i id="work" class="fas fa-circle work"></i></span>
+              <span
+                ><i id="entertainment" class="fas fa-circle entertainment"></i
+              ></span>
+            </div>
+            <div class="done" id="done">
+              <label for="complete">done</label>
+              <input type="checkbox" id="complete" />
+            </div>
+          </div>
+        </div>
+        <!-- third card test / more content -->
+        <div class="card">
+          <div class="card-top">
+            <p class="content-two">
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nihil,
+              vero. Nihil in assumenda voluptate neque animi dignissimos
+              reiciendis quasi distinctio, totam fuga, quos, accusamus nisi
+              incidunt minus a doloribus cupiditate.
+            </p>
+            <button id="options" class="options">
+              <i class="fas fa-ellipsis-h"></i>
+            </button>
+          </div>
+          <div class="card-bottom">
+            <div class="tag">
+              <span
+                ><i id="entertainment" class="fas fa-circle entertainment"></i
+              ></span>
+            </div>
+            <div class="done" id="done">
+              <label for="complete">done</label>
+              <input type="checkbox" id="complete" />
+            </div>
+          </div>
+        </div>
+      </div>
+  
+      <!-- modal -->
+      <div id="modal" class="modal">
+          <div class="modal-top">
+              <button id="cancel" class="cancel">cancel</button>
+              <button id="add-btn" class="add-btn">add</button>
+          </div>
+  
+          <!-- input -->
+          <div class="input">
+              <div class="input-title">
+                  <h2>Title</h2>
+                  <input type="text" placeholder="add a title...">
+              </div>
+              <div class="input-description">
+                  <h2>Description</h2>
+                  <textarea type="text" placeholder="add a description..."></textarea>
+              </div>
+          </div>
+  
+          <div class="tags">
+              <span><i id="work" class="fas fa-circle work"></i> work</span>
+              <span><i id="study" class="fas fa-circle study"></i> study</span>
+              <span><i id="family" class="fas fa-circle family"></i> family</span>
+              <span
+                ><i id="entertainment" class="fas fa-circle entertainment"></i>
+                entertainment</span
+              >
+            </div>
+      </div>
     
     
     <script type="text/javascript" src="resources/scripts/script.js"></script>
