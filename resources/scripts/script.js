@@ -5,6 +5,7 @@ const addBtn = document.querySelector('.add')
 const cardsContainer = document.querySelector('.cards')
 let doneCheckbox = document.querySelector('.done')
 let content = document.querySelector('.content')
+const deleteBtn = document.querySelector('#delete')
 
 
 //get input value
@@ -26,13 +27,13 @@ const fillInput = () => {
 						</p>
 						</div>
 						<div class="card-bottom">
-						<div class="pretty p-default p-round p-thick">
+						<div id='delete' class="pretty p-default p-round">
 						<input type="checkbox" />
 						<div class="state p-danger-o">
 							<label>delete</label>
 						</div>
 					</div>
-						<div class="pretty p-default p-round p-thick done">
+						<div class="pretty p-default p-round done">
 						<input type="checkbox" />
 						<div class="state p-success-o">
 							<label>done</label>
@@ -41,8 +42,8 @@ const fillInput = () => {
 					</div>
 					</div>
 			`
-			}
-			else {
+			
+			} else {
 				alert('Please fill input field.')
 			}
 			cardsContainer.innerHTML += card
@@ -95,4 +96,9 @@ input.addEventListener('keyup', (e) => {
 addBtn.addEventListener('click', () => {
 	addBtn.classList.toggle('active')
 	input.classList.toggle('input-title')
+
+	fillInput()
+	
+=======
+
 })
