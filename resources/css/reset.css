@@ -10,6 +10,7 @@ body {
   color: #333;
   letter-spacing: 0.7px;
   width: 100vw;
+  background-color: #F5F4F1;
 }
 
 /* header section */
@@ -27,15 +28,15 @@ body {
 }
 
 .second {
-  color: #ffcece;
+  color: #FFE4AD;
 }
 
 .third {
-  color: #69665c;
+  color: #5CB85C;
 }
 
 .four {
-  color: #1a535c;
+  color: #D9534F;
 }
 
 .title {
@@ -72,7 +73,7 @@ body {
 }
 
 .card {
-  background-color: #fff9de;
+  background-color: #FFE4AD;
   border-radius: 8px;
   padding: 16px 18px;
   margin: 8px auto;
@@ -81,8 +82,8 @@ body {
   color: #333;
   border: 1px solid #b2afa1;
   z-index: 1;
-/*   box-shadow: 2px 2px 2px 2px #333; 
- */  display: flex;
+  box-shadow: 2px 2px 2px 2px #5c5c5c; /* maybe check out */
+  display: flex;
   align-items: flex-start;
   justify-content: space-between;
   flex-direction: column;
@@ -107,7 +108,7 @@ body {
   width: 360px;
   padding-right: 20px;
   padding-bottom: 16px;
-  color: #69665c;
+  color: #333333;
   font-size: 18px;
   line-height: 20px;
 }
@@ -143,6 +144,7 @@ body {
   outline: none;
   border-radius: 6px;
   border: 1px solid #b2afa1;
+  box-shadow: 2px 2px 2px 2px #5c5c5c; 
   color: #333;
 }
 
@@ -162,7 +164,7 @@ footer {
   padding: 10px;
   width: 80%;
   text-align: center;
-  border-top: 1px solid #b2afa1;
+  border-top: 1px solid #333333;
   overflow: hidden;
 
 }
@@ -177,12 +179,12 @@ footer .minja {
 }
 
 footer .danny {
-  color: #1a535c;
+  color: #5CB85C;
   padding: 0 4px;
 }
 
 footer .guel {
-  color: #ffcece;
+  color: #D9534F;
 }
 
 
