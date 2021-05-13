@@ -35,34 +35,34 @@ body::after{
   padding: 20px 0 60px 0;
 }
 
-.first {
-  color: #333;
+/* .first {
+  color: #5CB85C;
 }
 
 .second {
-  color: #FFE4AD;
+  color: #333;
 }
 
 .third {
-  color: #5CB85C;
+  color: #333;
 }
 
 .four {
   color: #D9534F;
-}
+} */
 
 .title {
   font-weight: 700;
   letter-spacing: 2px;
   font-size: 46px;
-  filter: drop-shadow(2px 2px 2px #333);
+  filter: drop-shadow(2px 2px 2px #118ab2);
 
 }
 
 .title a {
   text-decoration: none;
   outline: none;
-  color: #333;
+  color: #073b4c;
 }
 
 .add {
@@ -70,10 +70,11 @@ body::after{
   border: none;
   font-size: 48px;
   font-weight: 400;
+  color: #073b4c;
   background: transparent;
   cursor: pointer;
   transition: transform 0.6s ease-in-out;
-  filter: drop-shadow(2px 2px 2px #333);
+  filter: drop-shadow(2px 2px 2px #118ab2);
 }
 .active{
   transform: rotate(90deg);
@@ -89,7 +90,7 @@ body::after{
 }
 
 .card {
-  background-color: #FFE4AD;
+  background-color: #ffd166;
   border-radius: 8px;
   padding: 16px 18px;
   margin: 8px auto;
@@ -182,9 +183,9 @@ body::after{
   outline: none;
   border-radius: 6px;
   border: 1px solid #b2afa1;
-  box-shadow: 1px 1px 1px 1px #858585; 
+  box-shadow: 1px 1px 1px 1px rgb(151, 143, 143); 
   color: #333;
-  opacity: 0.7;
+  opacity: 0.9;
 }
 
 .input-description {
@@ -201,8 +202,8 @@ body::after{
   background-color: transparent;
 }
 .custom-done:hover{
-  background-color: #5CB85C;
-  border: 2px solid #FFE4AD;
+  background-color: #06d6a0;
+  border: 2px solid #ffd166;
   border-width: 4px;
   border-style: double;
 
@@ -214,8 +215,8 @@ body::after{
   border: 1px solid #b2afa1;
 }
 .custom-remove:hover{
-  background-color: #D9534F;
-  border: 2px solid #FFE4AD;
+  background-color: #ef476f;
+  border: 2px solid #ffd166;
   border-width: 4px;
   border-style: double;
 }
@@ -246,12 +247,12 @@ footer .minja {
 }
 
 footer .danny {
-  color: #5CB85C;
+  color: #06d6a0;
   padding: 0 4px;
 }
 
 footer .guel {
-  color: #D9534F;
+  color: #ef476f;
 }
 
 
@@ -265,6 +266,7 @@ footer .guel {
 
   .input-show {
     top: 40px;
-    float: right;
+    left: 40px;
+    width: 50vw;
   }
 }
