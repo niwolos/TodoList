@@ -160,6 +160,7 @@ body::after{
 .line{
   text-decoration: line-through;
   text-decoration-style: double;
+  text-decoration-color: #ef476f;
 }
 
 .input-title {
@@ -183,7 +184,7 @@ body::after{
   outline: none;
   border-radius: 6px;
   border: 1px solid #b2afa1;
-  box-shadow: 1px 1px 1px 1px rgb(151, 143, 143); 
+  box-shadow: 1px 1px 1px 1px #858585; 
   color: #333;
   opacity: 0.9;
 }
