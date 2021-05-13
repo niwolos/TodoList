@@ -12,6 +12,18 @@ body {
   width: 100vw;
   background-color: #F5F4F1;
 }
+body::after{
+  content: '';
+  background-image: url('/resources/css/Waihou.svg');
+  opacity: 0.4;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  position: absolute;
+  z-index: -1;
+}
+
 
 /* header section */
 .header {
@@ -43,11 +55,14 @@ body {
   font-weight: 700;
   letter-spacing: 2px;
   font-size: 46px;
+  filter: drop-shadow(2px 2px 2px #333);
+
 }
 
 .title a {
   text-decoration: none;
   outline: none;
+  color: #333;
 }
 
 .add {
@@ -58,6 +73,7 @@ body {
   background: transparent;
   cursor: pointer;
   transition: transform 0.6s ease-in-out;
+  filter: drop-shadow(2px 2px 2px #333);
 }
 .active{
   transform: rotate(90deg);
@@ -122,22 +138,22 @@ body {
   cursor: pointer;
   font-weight: 100;
 }
-.remove{
+.remove, .read{
   outline: none;
   border: none;
   background-color: transparent;
-  font-size: 16px;
+  font-size: 17px;
   color: #333;
   letter-spacing: 0.8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
 }
 
-.read{
-  outline: none;
-  border: none;
-  background-color: transparent;
-  font-size: 16px;
-  color: #333;
-  letter-spacing: 0.8px;
+.remove{
+  padding-right: 12px;
+
 }
 
 .line{
@@ -174,6 +190,37 @@ body {
 .input-description {
   padding-top: 30px;
   padding-bottom: 40px;
+}
+
+/* custom checkbox */
+.custom-done{
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  border: 1px solid #b2afa1;
+  background-color: transparent;
+}
+.custom-done:hover{
+  background-color: #5CB85C;
+  border: 2px solid #FFE4AD;
+  border-width: 4px;
+  border-style: double;
+
+}
+.custom-remove{
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  border: 1px solid #b2afa1;
+}
+.custom-remove:hover{
+  background-color: #D9534F;
+  border: 2px solid #FFE4AD;
+  border-width: 4px;
+  border-style: double;
+}
+.custom-text{
+  padding-left: 4px;
 }
 
 
