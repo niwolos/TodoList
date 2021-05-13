@@ -84,6 +84,7 @@ function setupCardInput() {
 				})
 			}
 			createCard() //calling function
+			document.querySelector('input').value = ''
 		}
 
 
