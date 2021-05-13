@@ -14,7 +14,7 @@ body {
 }
 body::after{
   content: '';
-  background-image: url('/resources/css/Waihou.svg');
+  background-image: url('/resources/css/Vorderrhein.svg');
   opacity: 0.4;
   top: 0;
   left: 0;
