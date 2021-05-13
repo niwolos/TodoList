@@ -82,6 +82,15 @@ function setupCardInput() {
 				removeBtn.addEventListener('click', () => {
 					cardContainer.removeChild(card)
 				})
+
+				//card color generator
+				const cardBackground = () => {
+					const colors = ['#D4F49C', '#F4B69C', '#66D7EE', '#C69CF4', '#f5d782']
+					const randomColor = colors[Math.floor(Math.random() * colors.length)]
+					card.style.backgroundColor = randomColor
+				}
+				cardBackground()
+
 			}
 			createCard() //calling function
 			document.querySelector('input').value = ''
