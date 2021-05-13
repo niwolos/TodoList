@@ -7,23 +7,11 @@
 body {
   padding-top: 10px;
   font-family: "Roboto", sans-serif;
-  color: #333;
+  color: #31291d;
   letter-spacing: 0.7px;
   width: 100vw;
-  background-color: #F5F4F1;
+  background-color: #f1f3f8;
 }
-body::after{
-  content: '';
-  background-image: url('/resources/css/Vorderrhein.svg');
-  opacity: 0.4;
-  top: 0;
-  left: 0;
-  bottom: 0;
-  right: 0;
-  position: absolute;
-  z-index: -1;
-}
-
 
 /* header section */
 .header {
@@ -35,34 +23,16 @@ body::after{
   padding: 20px 0 60px 0;
 }
 
-/* .first {
-  color: #5CB85C;
-}
-
-.second {
-  color: #333;
-}
-
-.third {
-  color: #333;
-}
-
-.four {
-  color: #D9534F;
-} */
-
 .title {
-  font-weight: 700;
+  font-weight: 400;
   letter-spacing: 2px;
   font-size: 46px;
-  filter: drop-shadow(2px 2px 2px #118ab2);
-
 }
 
 .title a {
   text-decoration: none;
   outline: none;
-  color: #073b4c;
+  color: #31291d;
 }
 
 .add {
@@ -70,11 +40,10 @@ body::after{
   border: none;
   font-size: 48px;
   font-weight: 400;
-  color: #073b4c;
+  color: #31291d;
   background: transparent;
   cursor: pointer;
   transition: transform 0.6s ease-in-out;
-  filter: drop-shadow(2px 2px 2px #118ab2);
 }
 .active{
   transform: rotate(90deg);
@@ -96,10 +65,8 @@ body::after{
   margin: 8px auto;
   width: 410px;
   height: 150px;
-  color: #333;
-  border: 1px solid #b2afa1;
+  color: #31291d;
   z-index: 1;
-  box-shadow: 1px 1px 1px 1px #858585; 
   /* maybe check out */
   display: flex;
   align-items: flex-start;
@@ -126,7 +93,7 @@ body::after{
   width: 360px;
   padding-right: 20px;
   padding-bottom: 16px;
-  color: #333333;
+  color: #31291d;
   font-size: 18px;
   line-height: 20px;
 }
@@ -144,7 +111,7 @@ body::after{
   border: none;
   background-color: transparent;
   font-size: 17px;
-  color: #333;
+  color: #31291d;
   letter-spacing: 0.8px;
   display: flex;
   align-items: center;
@@ -160,7 +127,7 @@ body::after{
 .line{
   text-decoration: line-through;
   text-decoration-style: double;
-  text-decoration-color: #ef476f;
+  text-decoration-color: #D9534F;
 }
 
 .input-title {
@@ -179,14 +146,14 @@ body::after{
 .input-show>input[type='text'] {
   width: 100%;
   margin: auto;
-  font-size: 18px;
-  padding: 8px 16px;
+  font-size: 20px;
+  padding: 10px 16px;
   outline: none;
+  border: none;
   border-radius: 6px;
-  border: 1px solid #b2afa1;
-  box-shadow: 1px 1px 1px 1px #858585; 
-  color: #333;
-  opacity: 0.9;
+  background-color: transparent;
+  color: #31291d;
+  opacity: 1;
 }
 
 .input-description {
@@ -195,28 +162,22 @@ body::after{
 }
 
 /* custom checkbox */
-.custom-done{
+.custom-done, .custom-remove{
   width: 20px;
   height: 20px;
   border-radius: 50%;
-  border: 1px solid #b2afa1;
+  border: 1px solid #31291d; /* new border */
   background-color: transparent;
 }
 .custom-done:hover{
-  background-color: #06d6a0;
+  background-color: #5CB85C;
   border: 2px solid #ffd166;
   border-width: 4px;
   border-style: double;
 
 }
-.custom-remove{
-  width: 20px;
-  height: 20px;
-  border-radius: 50%;
-  border: 1px solid #b2afa1;
-}
 .custom-remove:hover{
-  background-color: #ef476f;
+  background-color: #D9534F;
   border: 2px solid #ffd166;
   border-width: 4px;
   border-style: double;
@@ -244,16 +205,16 @@ footer a {
 }
 
 footer .minja {
-  color: #333;
+  color: #31291d;
 }
 
 footer .danny {
-  color: #06d6a0;
+  color: #5CB85C;
   padding: 0 4px;
 }
 
 footer .guel {
-  color: #ef476f;
+  color: #D9534F;
 }
 
 
