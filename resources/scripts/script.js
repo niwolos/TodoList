@@ -56,43 +56,35 @@ function setupCardInput() {
 					const removeBtn = document.createElement('button')
 					removeBtn.classList.add('remove')
 					removeBtn.innerHTML = `
-				<div class="pretty p-default p-round">
-					<input type="checkbox" />
-					<div class="state p-danger-o">
-					<label>delete</label>
-					</div>
-				</div>`
+					<div class='custom-remove'></div>
+					<span class='custom-text'>delete</span>`
 					const doneBtn = document.createElement('button')
 					doneBtn.classList.add('read')
 					doneBtn.innerHTML = `
-				<div class="pretty p-default p-round done">
-					<input id="check" type="checkbox" />
-					<div class="state p-success-o">
-					<label>done</label>
-					</div>
-				</div>
+					<div class='custom-done'></div>
+					<span class='custom-text'>done</span>
 				`
 
-					//apending elements
-					cardContainer.appendChild(card)
-					card.appendChild(cardTop)
-					card.appendChild(cardBottom)
-					cardTop.appendChild(content)
-					cardBottom.appendChild(removeBtn)
-					cardBottom.appendChild(doneBtn)
+				//apending elements
+				cardContainer.appendChild(card)
+				card.appendChild(cardTop)
+				card.appendChild(cardBottom)
+				cardTop.appendChild(content)
+				cardBottom.appendChild(removeBtn)
+				cardBottom.appendChild(doneBtn)
 
-					//done option
-					doneBtn.addEventListener('click', () => {
-						content.classList.toggle('line')
-					})
+				//done option
+				doneBtn.addEventListener('click', () => {
+					content.classList.toggle('line')
+				})
 
-					//delete option
-					removeBtn.addEventListener('click', () => {
-						cardContainer.removeChild(card)
-					})
-				}
-				createCard() //calling function
+				//delete option
+				removeBtn.addEventListener('click', () => {
+					cardContainer.removeChild(card)
+				})
 			}
+			createCard() //calling function
+		}
 
 
 			/* let valueInput = e.target.value
