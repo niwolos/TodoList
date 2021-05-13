@@ -57,7 +57,7 @@ body {
   font-weight: 400;
   background: transparent;
   cursor: pointer;
-  transition: transform 0.7s ease-in-out;
+  transition: transform 0.6s ease-in-out;
 }
 .active{
   transform: rotate(90deg);
@@ -122,7 +122,28 @@ body {
   cursor: pointer;
   font-weight: 100;
 }
+.remove{
+  outline: none;
+  border: none;
+  background-color: transparent;
+  font-size: 16px;
+  color: #333;
+  letter-spacing: 0.8px;
+}
 
+.read{
+  outline: none;
+  border: none;
+  background-color: transparent;
+  font-size: 16px;
+  color: #333;
+  letter-spacing: 0.8px;
+}
+
+.line{
+  text-decoration: line-through;
+  text-decoration-style: double;
+}
 
 .input-title {
   display: none;
@@ -147,6 +168,7 @@ body {
   border: 1px solid #b2afa1;
   box-shadow: 1px 1px 1px 1px #858585; 
   color: #333;
+  opacity: 0.7;
 }
 
 .input-description {
@@ -154,18 +176,15 @@ body {
   padding-bottom: 40px;
 }
 
-.input[type='text']::placeholder {
-  color: blue;
-}
 
 /* footer */
 footer {
   position: fixed;
   bottom: 0;
   padding: 10px;
-  width: 80%;
+  width: 100%;
   text-align: center;
-  border-top: 1px solid #333333;
+  border-top: 1px solid #e0e0e0;
   overflow: hidden;
 
 }
