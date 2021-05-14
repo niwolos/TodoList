@@ -65,29 +65,29 @@ function setupCardInput() {
 					<span class='custom-text'>done</span>
 				`
 
-				//apending elements
-				cardContainer.appendChild(card)
-				card.appendChild(cardTop)
-				card.appendChild(cardBottom)
-				cardTop.appendChild(content)
-				cardBottom.appendChild(removeBtn)
-				cardBottom.appendChild(doneBtn)
+					//apending elements
+					cardContainer.appendChild(card)
+					card.appendChild(cardTop)
+					card.appendChild(cardBottom)
+					cardTop.appendChild(content)
+					cardBottom.appendChild(removeBtn)
+					cardBottom.appendChild(doneBtn)
 
-				//done option
-				doneBtn.addEventListener('click', () => {
-					content.classList.toggle('line')
-				})
+					//done option
+					doneBtn.addEventListener('click', () => {
+						content.classList.toggle('line')
+					})
 
-				//delete option
-				removeBtn.addEventListener('click', () => {
-					cardContainer.removeChild(card)
-				})
+					//delete option
+					removeBtn.addEventListener('click', () => {
+						cardContainer.removeChild(card)
+					})
 
-				//card color generator
-				const cardBackground = () => {
-					const colors = ['#D4F49C', '#F4B69C', '#66D7EE', '#C69CF4', '#f5d782']
-					const randomColor = colors[Math.floor(Math.random() * colors.length)]
-					card.style.backgroundColor = randomColor
+					//card color generator
+					const cardBackground = () => {
+						const colors = ['#D4F49C', '#F4B69C', '#66D7EE', '#C69CF4', '#f5d782']
+						const randomColor = colors[Math.floor(Math.random() * colors.length)]
+						card.style.backgroundColor = randomColor
 				}
 				cardBackground()
 
