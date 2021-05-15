@@ -208,6 +208,9 @@ footer a {
   text-decoration: none;
   font-weight: 400;
 }
+footer a:hover{
+  font-size: 20px;
+}
 
 footer .minja {
   color: #31291d;
@@ -224,6 +227,12 @@ footer .guel {
 
 
 /* media queries */
+@media(max-width: 425px){
+  .card{
+    width: 350px;
+  }
+}
+
 @media(min-width:780px) {
   .cards {
     flex-direction: row;
