@@ -172,7 +172,7 @@ body {
   height: 20px;
   border-radius: 50%;
   border: 1px solid #31291d; /* new border */
-  background-color: transparent;
+  /* background-color: transparent; */
 }
 .custom-done:hover{
   background-color: #5CB85C;
@@ -188,7 +188,7 @@ body {
   border-style: double;
 }
 .custom-text{
-  padding-left: 4px;
+  padding-left: 6px;
 }
 
 
