@@ -148,7 +148,8 @@ body {
 .line{
   text-decoration: line-through;
   text-decoration-style: double;
-  text-decoration-color: #D9534F;
+  color: #D9534F;
+  font-weight: 700;
 }
 
 .input-title {
