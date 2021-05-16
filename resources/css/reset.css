@@ -79,7 +79,8 @@ body {
   padding: 16px 18px;
   margin: 8px auto;
   width: 410px;
-  height: 150px;
+  min-height: 100px;
+  max-height: fit-content;
   color: #31291d;
   z-index: 1;
   /* maybe check out */
