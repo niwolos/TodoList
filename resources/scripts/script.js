@@ -1,4 +1,5 @@
 'use strict';
+
 const APP_NAME = "TodoList";
 
 let descriptionInput
@@ -283,6 +284,15 @@ window.addEventListener('beforeunload', function (e) {
         }
     }
   });
+
+  window.addEventListener('scroll', () => {
+      let header = document.querySelector('.header')
+      if(window.pageYOffset > 10){
+          header.classList.add('sticky')
+      } else {
+          header.classList.remove('sticky')
+      }
+  })
 
 //set up website event listeners for interactions
 prepareWebsiteListeners()
