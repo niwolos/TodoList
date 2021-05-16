@@ -159,7 +159,7 @@ function setupDescriptionInputListener() {
 function displayCardInDOM(cardObject) {
     //creating lements
     const card = document.createElement('div')
-    card.classList.add('card')
+    card.classList.add('card', 'animate__animated', 'animate__fadeInDown')
     const cardTop = document.createElement('div')
     cardTop.classList.add('card-top')
     const cardBottom = document.createElement('div')
