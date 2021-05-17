@@ -71,6 +71,7 @@ body {
   padding-left: 20px;
   padding-right: 20px;
   margin-bottom: 60px;
+  width: 100%;
 }
 
 .card {
@@ -111,7 +112,7 @@ body {
 
 .content {
   word-break: break-word;
-  width: 360px;
+  /* width: 360px; */
   padding-right: 40px;
   padding-bottom: 16px;
   color: #31291d;
@@ -244,13 +245,20 @@ footer .minja {
 }
 
 footer .danny {
-  color: #5CB85C;
+  color: #247124;
   padding: 0 4px;
 }
 
 footer .guel {
-  color: #D9534F;
+  color: #bb2620;
 }
+h2 {
+    padding: 20px 40px;
+    border-top: 1px solid #dedede;
+    font-weight: 300;
+    
+}
+
 
 
 /* media queries */
