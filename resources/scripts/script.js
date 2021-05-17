@@ -228,8 +228,9 @@ function displayCardInDOM(cardObject) {
 
     //add delete listener
 	removeBtn.addEventListener('click', () => {
+        card.remove()
         //1. manipulate DOM object
-		cardContainer.removeChild(card)
+		/* cardContainer.removeChild(card) */
         //2. manipulate JS object
         cardObject.delete()
         
