@@ -187,10 +187,22 @@ function displayCardInDOM(cardObject) {
     <div class='custom-done'></div>
     <span class='custom-text'>done</span>
     `
+
+     /* completed cards - testing*/
+     completeCard = document.createElement('div')
+     completeCard.classList.add('check')
+     console.log(completeCard)
+     console.log(cardObject.done)
+
+
     if(cardObject.done){
 		content.classList.add('line')
+        completeCard.appendChild(card)
+
     } else {
 		content.classList.remove('line')
+        cardContainer.appendChild(card)
+
 	}
 
     //apending elements
@@ -224,6 +236,11 @@ function displayCardInDOM(cardObject) {
         //2. manipulate JS object
         cardObject.done = !(cardObject.done)
         console.log(`flipped the done status of card - now:\nid:${cardObject.id}\ndescription:${cardObject.description}\ndone:${cardObject.done}`)
+        if(cardObject.done === true){
+            document.querySelector('.check').appendChild(card)
+        } else {
+            document.querySelector('.cards').appendChild(card)
+        }
 	})
 }
 

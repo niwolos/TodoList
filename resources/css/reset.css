@@ -79,7 +79,8 @@ body {
   padding: 16px 18px;
   margin: 8px auto;
   width: 410px;
-  height: 150px;
+  min-height: 100px;
+  max-height: fit-content;
   color: #31291d;
   z-index: 1;
   /* maybe check out */
@@ -147,7 +148,8 @@ body {
 .line{
   text-decoration: line-through;
   text-decoration-style: double;
-  text-decoration-color: #D9534F;
+  color: #D9534F;
+  font-weight: 700;
 }
 
 .input-title {
@@ -206,6 +208,17 @@ body {
   padding-left: 6px;
 }
 
+/* example */
+.check{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding-bottom: 60px;
+  margin-bottom: 60px;
+  height: fit-content;
+}
+/* ------ */
 
 /* footer */
 footer {
@@ -261,5 +274,10 @@ footer .guel {
     top: 40px;
     left: 40px;
     width: 50vw;
+  }
+
+  .check{
+    flex-direction: row;
+    flex-wrap: wrap;
   }
 }
