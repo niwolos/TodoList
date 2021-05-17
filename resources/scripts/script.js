@@ -189,21 +189,20 @@ function displayCardInDOM(cardObject) {
     `
 
      /* completed cards - testing*/
-     completeCard = document.createElement('div')
+     let completeCard = document.createElement('div')
      completeCard.classList.add('check')
      console.log(completeCard)
      console.log(cardObject.done)
 
-
+     /*
     if(cardObject.done){
-		content.classList.add('line')
         completeCard.appendChild(card)
 
     } else {
 		content.classList.remove('line')
         cardContainer.appendChild(card)
-
 	}
+    */
 
     //apending elements
     cardContainer.appendChild(card)
@@ -212,13 +211,20 @@ function displayCardInDOM(cardObject) {
     cardTop.appendChild(content)
     cardBottom.appendChild(removeBtn)
     cardBottom.appendChild(doneBtn)
+    
 
     const cardBackground = () => {
         const colors = ['#D4F49C', '#F4B69C', '#66D7EE', '#C69CF4', '#f5d782']
         const randomColor = colors[Math.floor(Math.random() * colors.length)]
         card.style.backgroundColor = randomColor
     }
+
     cardBackground()
+    if(cardObject.done){
+    content.classList.add('line')
+    document.querySelector('.check').appendChild(card)
+    }
+
 
     //add delete listener
 	removeBtn.addEventListener('click', () => {
