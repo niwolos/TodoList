@@ -1,7 +1,7 @@
 {
   "dir": "ltr",
   "lang": "en-US",
-  "name": "to do app",
+  "name": "to do",
   "short_name": "to do",
   "display": "standalone",
   "start_url": "/index.html",
@@ -12,6 +12,7 @@
   "orientation": "any",
   "related_applications": [],
   "prefer_related_applications": true,
+  "purpose": "any maskable",
   "icons": [
     {
       "src": "/resources/css/logo-512.png",

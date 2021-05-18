@@ -324,15 +324,19 @@ prepareWebsiteListeners()
 setupCardsFromLocalStorage()
 
 //service worker
-if ('serviceWorker' in navigator) {
-    navigator.serviceWorker.register('../sw.js')
-    .then(function(registration) {
-      console.log('Registration successful, scope is:', registration.scope);
+if('serviceWorker' in navigator) {
+    navigator.serviceWorker
+    .register('../sw.js')
+    .then(function() {
+      console.log("Service Worker registered successfully");
     })
-    .catch(function(error) {
-      console.log('Service worker registration failed, error:', error);
+    .catch(function() {
+      console.log("Service worker registration failed")
     });
   }
+
+
+  
 //to get an object from localstorage...
 //aCard = JSON.parse(localStorage.getItem(`card-${this._id}`))
 //to save an object to localstorage
