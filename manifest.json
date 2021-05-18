@@ -4,7 +4,7 @@
   "name": "to do",
   "short_name": "to do",
   "display": "standalone",
-  "start_url": "/",
+  "start_url": "https://niwolos.github.io/",
   "scope": ".",
   "background_color": "white",
   "theme_color": "white",
