@@ -255,7 +255,7 @@ footer .guel {
 h2 {
     border-top: 1px solid #dedede;
     font-weight: 300;
-    padding: 20px 40px 20px 11%;
+    padding: 20px 40px 20px 10%;
 }
 
 
@@ -287,10 +287,19 @@ h2 {
     flex-direction: row;
     flex-wrap: wrap;
   }
+  h2{
+    padding: 20px 40px 20px 12%;
+  }
 }
 
 @media(min-width:1024px){
   h2{
     padding: 20px 40px 20px 13%;
+  }
+}
+
+@media(min-width: 1600px){
+  h2{
+    padding: 20px 40px 20px 14%;
   }
 }
