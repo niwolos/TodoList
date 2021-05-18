@@ -5,7 +5,7 @@
   "short_name": "to do",
   "display": "standalone",
   "start_url": "https://niwolos.github.io/",
-  "scope": ".",
+  "scope": "https://niwolos.github.io/TodoList/",
   "background_color": "white",
   "theme_color": "white",
   "description": "Minimalistic Todo App",
